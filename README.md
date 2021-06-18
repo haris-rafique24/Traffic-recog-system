@@ -1,3 +1,6 @@
 # Traffic-recog-system
 This project is a part of an internship done by me from The SPARKS Foundation, which is based on computer vision and IOT. For this task, I used a relatively small training set as compared to the one available on Kaggle (link given in description). This Machine Learning model basically classifies different types of traffic signs fed into the network and displays the output in the form of images with their respective labels.  (Link to download dataset:  https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign/)
 
+To run the traintraffic.py file, open the command terminal and type the following command: "python traintraffic.py  --dataset archive --model output/trafficsignnet.model --plot output/plot.png" (Note that archive is the name of the folder in which you have the dataset files in). Likewise, the predict.py file is run using the following command: "python predict.py --model output/trafficsignnet.model --images archive/Test --examples Meta  (Meta here is the folder in which the images have their labels printed on them when fed into the network)
+
+The TrafficSignNet.py file acts as a header file that has the model building function used for the classification problem (Traffic sign recognition in this case)
